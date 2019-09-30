@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Ads</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="css/responsive_style.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/aad.css"> -->
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet"
+    href="https://s3.ap-southeast-1.amazonaws.com/resources.cloudshoppy.com/shop/1088/themes/theme1005/assets/css/style.css">
+  <!-- Font Awesome Fonts-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800%7CMontserrat:400,700'
+    rel='stylesheet' type='text/css'>
+
+  <style>
+    .video-item .play-video-button {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .video-item .icon-play-video .fa-youtube-play {
+      color: #fff;
+      font-size: 60px;
+      height: 150px;
+      margin: 5px;
+      min-width: 10px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      z-index: 21;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="vfx_loader_block">
+    <div class="vfx-loader-item"> <img src="images/loading.gif" alt="" /> </div>
+  </div>
+  <div id="logo-header" data-spy="affix" data-offset-top="500">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-xs-9">
+          <div id="logo"> <a href="index.html"><img src="images/logo.png" alt="logo"></a> </div>
+        </div>
+        <div class="col-sm-9 text-right">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#thrift-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span
+                  class="icon-bar"></span>
+                <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="thrift-1"> <a href="#" class="dropdown-toggle"
+                data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+              <div id="nav_menu_list">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="categories.html">Categories</a></li>
+                  <li><a href="#">Listing <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                      <li><a href="dashboard.html"><i class="fa fa-angle-double-right"></i> Dashboard</a></li>
+                      <li><a href="listing_grid.html"><i class="fa fa-angle-double-right"></i> Listing Grid</a></li>
+                      <li><a href="listing_list.html"><i class="fa fa-angle-double-right"></i> Listing List</a></li>
+                      <li><a href="listing_left_sidebar.html"><i class="fa fa-angle-double-right"></i> Listing Left
+                          Sidebar</a></li>
+                      <li><a href="listing_right_sidebar.html"><i class="fa fa-angle-double-right"></i> Listing Right
+                          Sidebar</a></li>
+                      <li><a href="listing_detail.html"><i class="fa fa-angle-double-right"></i> Listing Single Post</a>
+                      </li>
+                      <li><a href="listing_fullwidth.html"><i class="fa fa-angle-double-right"></i> Listing Full
+                          Width</a></li>
+                      <li><a href="page_error_404.html"><i class="fa fa-angle-double-right"></i> Page not Found</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li class="btn_item">
+                    <ul>
+                      <li>
+                        <button class="btn_login" data-toggle="modal" data-target="#login">Login</button>
+                      </li>
+                      <li>
+                        <button class="btn_register" data-toggle="modal" data-target="#register">Register</button>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="breadcrum-inner-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="breadcrum-inner-header">
+            <h1>Listing Grid</h1>
+            <a href="index.html">Home</a> <i class="fa fa-circle"></i> <a href="about.html"><span>Listing
+                Grid</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="vfx-product-inner-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="news-search-lt">
+            <input class="form-control" placeholder="Search" type="text">
+            <span class="input-search"> <i class="fa fa-search"></i> </span> </div>
+          <div class="left-slide-slt-block">
+            <h3>Categories</h3>
+          </div>
+          <div class="list-group"> <a href="#" class="list-group-item active"><i class="fa fa-hand-o-right"></i>
+              Business <span class="list-lt">15</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Health & Fitness <span class="list-lt">09</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Real Estate <span class="list-lt">18</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Entertainment <span class="list-lt">24</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Beauty & Spas <span class="list-lt">06</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Automotive <span class="list-lt">04</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Hotels & Travel <span class="list-lt">14</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Sports & Adventure <span class="list-lt">07</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Technology <span class="list-lt">12</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Arts & Entertainment <span class="list-lt">26</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Education & Learning <span class="list-lt">24</span></a> <a href="#" class="list-group-item"><i
+                class="fa fa-hand-o-right"></i>
+              Cloth Shop <span class="list-lt">16</span></a> </div>
+          <div class="left-slide-slt-block">
+            <h3>Popular Tags</h3>
+          </div>
+          <div class="archive-tag">
+            <ul>
+              <li><a href="#" class="active">Amazing</a></li>
+              <li><a href="#">Envato</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">Clean</a></li>
+              <li><a href="#">Responsivenes</a></li>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">IOS</a></li>
+              <li><a href="#">Flat</a></li>
+              <li><a href="#">Design</a></li>
+            </ul>
+          </div>
+          <div class="left-slide-slt-block">
+            <h3>Location List</h3>
+          </div>
+          <div class="left-location-item">
+            <ul>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Manchester</a><span class="list-lt">07</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Lankashire</a><span class="list-lt">04</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> New Mexico</a><span class="list-lt">03</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Nevada</a><span class="list-lt">06</span></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Kansas</a><span class="list-lt">08</span></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> West Virginina</a><span class="list-lt">05</span>
+              </li>
+            </ul>
+          </div>
+          <div class="left-slide-slt-block">
+            <h3>Archives</h3>
+          </div>
+          <div class="left-archive-categor">
+            <ul>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> January 2016</a><span class="list-lt">09</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> February 2016</a><span class="list-lt">52</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> March 2016</a><span class="list-lt">36</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> April 2016</a><span class="list-lt">78</span>
+              </li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> May 2016</a><span class="list-lt">66</span></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> June 2016</a><span class="list-lt">15</span></li>
+            </ul>
+          </div>
+
+        </div>
+        <div id="cont" class="col-md-9 col-sm-8 col-xs-12">
+          <div class="sorts-by-results">
+            <div class="col-md-6 col-sm-6 col-xs-6"> <span class="result-item-view">Your Search Returned <span
+                  class="yellow">12</span> Results</span> </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <div class="disp-f-right">
+                <div class="disp-style active"><a href="listing_grid.html"><i class="fa fa-th"></i></a></div>
+                <div class="disp-style"><a href="listing_list.html"><i class="fa fa-th-list"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="main mt-3">
+            <h2 class="h2-responsive font-weight-bold mt-3 mb-3">Templates</h2>
+            <div class="gallery" id="gallery">
+
+              <a href="#viewtemplate" data-toggle="modal" id="1" 
+                data-book-id="https://s3.ap-south-1.amazonaws.com/videoinaclick/Deepavail+Wishes.mp4">
+                <div class="mb-3 pics">
+                  <video id="box1" name ="videosrc" autoplay style="max-width: 100%;"
+                    src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Deepavail+Wishes.mp4">
+                  </video>
+                  <span class="text-content">
+                    <h5 class="templateHover" style="text-align: center;height:auto">Use this template</h5>
+                  </span>
+                </div>
+              </a>
+
+              <a href="#viewtemplate" data-toggle="modal" id="1"
+              data-book-id="https://s3.ap-south-1.amazonaws.com/videoinaclick/Cosmetics_Flyer1.mp4">
+           
+              
+                <div class="mb-3 pics">
+                  <video class="video-intro" name ="videosrc" autoplay="true" controlslist="nodownload" style="max-width: 100%;"
+                    src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Cosmetics_Flyer1.mp4"
+                     type="video/mp4">
+                  </video>
+                  <span class="text-content">
+                    <h5 class="templateHover">Use this template</h5>
+
+                  </span>
+                </div>
+              </a>
+
+              <a href="http://www.businessads.co">
+                <div class="mb-3 pics">
+                  <video class="video-intro" autoplay="true" loop="true" playsinline="" controls=""
+                    controlslist="nodownload" style="max-width: 100%;"
+                    src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Christmas.mp4"
+                    poster="http://resources.cloudshoppy.com/shop/1088/product/7991/image/md-christmas_img.jpg"
+                    type="video/mp4">
+                  </video>
+                  <span class="text-content">
+                    <h5 class="templateHover">Use this template</h5>
+
+                  </span>
+                </div>
+              </a>
+
+              <a href="http://www.businessads.co">
+                <div class="mb-3 pics">
+                  <video autoplay="true" loop="true" class="video-intro" name="media" style="max-width: 100%;">
+                    <source src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Baby+products.mp4" type="video/mp4">
+                    </video>
+
+                  <span class="text-content">
+                    <h5 class="templateHover">Use this template</h5>
+
+                  </span>
+                </div>
+              </a>
+              <!-- <a href="http://www.businessads.co">
+              <div class="mb-3 pics">
+                <video autoplay="true" loop="true" class="video-intro" name="media" style="max-width: 100%;">
+                  <source src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Indian+Spices.mp4" type="video/mp4"></video>
+                    <span class="text-content">
+                      <h5 class="templateHover">Use this template</h5>
+                     
+                    </span>
+             
+                  </div>
+            </a>
+
+            <a href="http://www.businessads.co">
+              <div class="mb-3 pics">
+                <video class="video-intro" autoplay="true" loop="true" controlslist="nodownload" style="max-width: 100%;"
+                  src="https://s3.ap-south-1.amazonaws.com/videoinaclick/DiwaliShot.mp4" poster="http://resources.cloudshoppy.com/shop/1088/product/7989/image/md-deepavali_wishes.jpg"
+                  type="video/mp4">
+                </video>
+                <span class="text-content">
+                  <h5 class="templateHover">Use this template</h5>
+                 
+                </span>
+             
+              </div>
+            </a> -->
+              <!-- <a href="http://www.businessads.co">
+              <div class="mb-3 pics">
+                <video autoplay="true" loop="true" class="video-intro" name="media" style="max-width: 100%;">
+                  <source src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Bakeries+and+Pasteries.mp4" type="video/mp4"></video>
+                    <span class="text-content">
+                      <h5 class="templateHover">Use this template</h5>
+                     
+                    </span>
+            
+                  </div>
+            </a>
+
+            <a href="http://www.businessads.co">
+              <div class="mb-3 pics">
+                <video autoplay="true" loop="true" class="video-intro" name="media" style="max-width: 100%;">
+                  <source src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Chirstmas1.mp4" type="video/mp4"></video>
+                    <span class="text-content">
+                      <h5 class="templateHover">Use this template</h5>
+                     
+                    </span>
+           
+                  </div>
+            </a>
+
+            <a href="http://www.businessads.co">
+              <div class="mb-3 pics">
+                <video class="video-intro" autoplay="true" loop="true" controlslist="nodownload" style="max-width: 100%;"
+                  src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Deepavali+wishes.mp4" poster="http://resources.cloudshoppy.com/shop/1088/product/7978/image/md-deepavali_wishes_3.jpg"
+                  type="video/mp4">
+                </video>
+                <span class="text-content">
+                  <h5 class="templateHover">Use this template</h5>
+                
+                </span>
+             
+              </div>
+            </a>
+
+            <a href="http://www.businessads.co">
+              <div class="mb-3 pics">
+                <video autoplay="true" loop="true" class="video-intro" name="media" style="max-width: 100%;">
+                  <source src="https://s3.ap-south-1.amazonaws.com/videoinaclick/DiwaliShot.mp4" type="video/mp4"></video>
+             
+                    <span class="text-content">
+                      <h5 class="templateHover">Use this template</h5>
+                     
+                    </span>
+                  </div>
+
+              <!-- <a href="http://www.businessads.co"> -->
+              <!-- <div class="mb-3 pics">
+                  <video autoplay="true" loop="true" class="video-intro" name="media" style="max-width: 100%;">
+                    <source src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Product_Explainer.mp4" type="video/mp4"></video>
+                      <span class="text-content">
+                        <!-- <h5 class="templateHover">Use this template</h5> -->
+              <!-- <div class="button1"><a href="#"> BUTTON </a></div> -->
+              <!-- <button class="button1">okk</button>
+                       </span>
+               
+                    </div> -->
+              <!-- </a> -->
+
+              <!-- <a href="http://www.businessads.co">
+                <div class="mb-3 pics">
+                  <video class="video-intro" autoplay="true" loop="true" controlslist="nodownload" style="max-width: 100%;"
+                    src="https://s3.ap-south-1.amazonaws.com/videoinaclick/Diwali+Wishes+1.mp4" poster="http://resources.cloudshoppy.com/shop/1088/product/7971/image/md-deepavali_wishes_6.jpg"
+                    type="video/mp4">
+                  </video>
+                  <span class="text-content">
+                    <h5 class="templateHover">Use this template</h5>                    
+                  </span>
+                </div>
+              </a> --> -->
+            </div>
+            <div class="vfx-person-block my-navigation ">
+
+              <ul class="vfx-pagination">
+                <li class="simple-pagination-previous "></li>
+                <li class="simple-pagination-page-numbers "></li>
+                <li class="simple-pagination-next "></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer footer-map">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>About Us</h2>
+            <hr>
+            <p class="about-lt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer justo lectus,
+              consectetur quis nisi vitae, Nunc eget ultrices ligula.</p>
+            <a href="about.html" class="btn-primary-link more-detail"><i class="fa fa-hand-o-right"></i> Read More</a>
+            <h2>Follow Us</h2>
+            <hr>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>Recent Listing</h2>
+            <hr>
+            <ul class="widget-news-simple">
+              <li>
+                <div class="news-thum"><a href="#"><img src="images/new-thum-1.png" alt="new-thum-1"></a></div>
+                <div class="news-text-thum">
+                  <h6><a href="listing_detail.html">Hello Directory Listing</a></h6>
+                  <p>Phasellus ut condimentum diam, eget tempus lorem...</p>
+                  <div>Price: $117</div>
+                </div>
+              </li>
+              <li>
+                <div class="news-thum"><a href="#"><img src="images/new-thum-1.png" alt="new-thum-1"></a></div>
+                <div class="news-text-thum">
+                  <h6><a href="listing_detail.html">Hello Directory Listing</a></h6>
+                  <p>Phasellus ut condimentum diam, eget tempus lorem...</p>
+                  <div>Price: $117</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>Useful links</h2>
+            <hr>
+            <ul class="use-slt-link">
+              <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Privacy & Policy</a></li>
+              <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Payment Method</a></li>
+              <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Sitemap</a></li>
+              <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Support</a></li>
+              <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Terms & Condition</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <h2>Have you any Query?</h2>
+            <hr>
+            <form class="form-alt">
+              <div class="form-group">
+                <input type="text" placeholder="Name :-" required class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Email :-" required class="form-control">
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Message :-" required class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-quote">Send Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <p class="text-xs-center">Copyright © 2017 All Rights Reserved.</p>
+          </div>
+          <div><a href="#" class="scrollup">Scroll</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================================ Login and Register Forms ===========================================-->
+
+  <!-- login form -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="listing-modal-1 modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel"> Login</h4>
+        </div>
+        <div class="modal-body">
+          <div class="listing-login-form">
+            <form action="#">
+              <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+                <input class="form-field bgwhite" type="text" name="user_name" placeholder="Username" />
+              </div>
+              <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+                <input class="form-field bgwhite" type="password" name="user_pass" placeholder="Password" />
+              </div>
+              <div class="listing-form-field clearfix margin-top-20 margin-bottom-20">
+                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+                <label for="checkbox-1-1"></label>
+                <label class="checkbox-lable">Remember Me</label>
+                <a href="#">Forgot Password?</a> </div>
+              <div class="listing-form-field">
+                <input class="submit" type="submit" value="login" />
+              </div>
+            </form>
+            <div class="bottom-links">
+              <p>Not a Member?<a href="#">Create Account</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- registration form -->
+  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="listing-modal-1 modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel2">Registration</h4>
+        </div>
+        <div class="modal-body">
+          <div class="listing-register-form">
+            <form action="#">
+              <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+                <input class="form-field bgwhite" type="text" name="user_name" placeholder="Name" />
+              </div>
+              <div class="listing-form-field"> <i class="fa fa-envelope blue-1"></i>
+                <input class="form-field bgwhite" type="email" name="user_email" placeholder="Email" />
+              </div>
+              <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+                <input class="form-field bgwhite" type="password" name="user_password" placeholder="Password" />
+              </div>
+              <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+                <input class="form-field bgwhite" type="password" name="user_confirm_password"
+                  placeholder="Confirm Password" />
+              </div>
+              <div class="listing-form-field clearfix margin-top-20 margin-bottom-20 login_form_text_center">
+                <input type="checkbox" id="checkbox-1-2" class="regular-checkbox" />
+                <label for="checkbox-1-2"></label>
+                <label class="checkbox-lable">i agree with</label> &nbsp; <a href="#">Terms & Conditions</a> </div>
+              <div class="listing-form-field">
+                <input class="submit" type="submit" value="create account" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- view template  form -->
+  <div class="modal fade" id="viewtemplate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="listing-modal-1 modal-dialog ">
+        <!-- style="max-height: 100%;max-width: 100%;" -->
+      <div id="content" class="modal-content " >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body " style="padding: 0 0 0">
+          <div>
+            <form>
+              <div style="">
+                <!--  -->
+                <video name ="vi123" id="box12"  controls autoplay style="object-fit: contain;max-height: 100%;max-width: 100%;" loop
+                  src="">
+                </video>
+
+               
+                <a class="btn-quote" style="">Customize this video</a>
+              </div>
+
+            </form>
+            <!-- <div class="bottom-links">
+            <p>Not a Member?<a href="#">Create Account</a></p>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div >
+
+
+
+
+
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery_custom.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script>  -->
+  <script
+    src="https://cdn.rawgit.com/ddenhartog/jquery-simple-pagination/master/jquery-simple-pagination-plugin.js"></script>
+
+  <script>
+
+
+
+
+
+    /**
+     Returns the dimensions of a video asynchrounsly.
+     @param {String} url Url of the video to get dimensions from.
+     @return {Promise} Promise which returns the dimensions of the video in 'width' and 'height' properties.
+     */
+    function getVideoDimensionsOf(url) {
+      return new Promise(function (resolve) {
+        // create the video element
+        let video = document.createElement('video');
+
+        // place a listener on it
+        video.addEventListener("loadedmetadata", function () {
+          // retrieve dimensions
+          let height = this.videoHeight;
+          let width = this.videoWidth;
+          // send back result
+          resolve({
+            height: height,
+            width: width
+          });
+        }, false);
+
+        // start download meta-datas
+        video.src = url;
+      });
+    }
+
+
+//setting Width and height of video & content
+    function setModalSize(src,isMobile) {
+      //var video = 'https://s3.ap-south-1.amazonaws.com/videoinaclick/Jeans_Offer.mp4';
+      getVideoDimensionsOf(src).then(function (dimensions) {
+        if(!isMobile){
+        if (dimensions.width > dimensions.height) {
+          document.getElementById("box12").height = 400;
+          document.getElementById("box12").width = 600;
+          document.getElementById("content").style.width = 700 + "px";
+          document.getElementById("content").style.height = 540 + "px";
+         
+        } else {
+          document.getElementById("box12").height = 420;
+          document.getElementById("box12").width = 300;
+          document.getElementById("content").style.width = 400 + "px";
+          document.getElementById("content").style.height = 550 + "px";
+        }
+      }
+
+      else{// mobile
+        console.log("mobile")
+        if (dimensions.width > dimensions.height) {
+          document.getElementById("box12").height = 400
+          document.getElementById("box12").width =window.innerWidth - 50;
+          document.getElementById("content").style.width = (window.innerWidth)+ "px";
+          document.getElementById("content").style.height = 300+"px";
+          document.getElementById("content").style.maxHeight = 100 +"%" ;
+          document.getElementById("content").style.maxWidth = 100 +"%" ;
+         
+         
+        } else {
+          document.getElementById("box12").height = 420;
+          document.getElementById("box12").width = 300;
+          document.getElementById("content").style.width = 400 + "px";
+          document.getElementById("content").style.height = 550 + "px";
+        }
+      }
+      })
+
+    }
+
+///on modal show event
+    $('#viewtemplate').on('show.bs.modal', function (e) {      
+      var bookId = $(e.relatedTarget).data('book-id');
+      //populate the textbox
+     var videoElment = $(e.currentTarget).find('video');
+     videoElment[0].src = bookId;  
+     
+    var isMobile = detectmob();
+    console.log(isMobile);
+     setModalSize(bookId,isMobile);     
+    })
+
+    function detectmob() {
+      if(window.innerWidth <= 800 ) {
+        return true;
+      } else {
+        return false;
+      }
+   }
+  
+
+
+
+    function playVideo(_obj) {
+      if ($("#pauseIcon1").css('display') == "none") {
+        $('#pauseIcon1').show('slow')
+        $('#playIcon1').hide('slow')
+        document.getElementById("video1").play();
+
+      } else {
+        $('#pauseIcon1').hide('slow')
+        $('#playIcon1').show('slow')
+        document.getElementById("video1").pause();
+
+      }
+    }
+
+
+    $(document).ready(function () {
+      var $pagination = $('#cont').simplePagination({
+        previous_content: '<i class="fa fa-angle-double-left"></i>', //e.g. '<'
+        next_content: '<i class="fa fa-angle-double-right"></i>', //e.g. '>'
+        number_of_visible_page_numbers: 5,
+        items_per_page: 5,
+        pagination_container: '#gallery',
+      });
+    });
+  </script>
+</body>
+
+</html>

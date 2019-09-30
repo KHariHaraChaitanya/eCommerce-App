@@ -1,0 +1,120 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3">
+          <i class="fas fa-user-plus"></i> Add buyer details
+        </h1>
+        <form action="buyerdetails" method="POST">
+            <div>
+                <label class="bmd-label-floating" style="font-family:verdana;color:black;align-self: auto;">objj</label>
+                <input  name="product" id="product" value='<%= (typeof product != "undefined" ? product : "") %>' hidden > 
+              </div>
+          <div class="form-group">
+            <label for="name">company Name</label>
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              class="form-control"
+              placeholder="Enter Name"
+            
+            />
+          </div>
+          <div class="form-group">
+            <label for="email"> </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="email"
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Address line1</label>
+            <input
+              type="text"
+              id="line1"
+              name="line1"
+              class="form-control"
+              placeholder="enter address"
+              
+            />
+            <div class="form-group">
+                <label for="name"> address line2 </label>
+                <input
+                  type="text"
+                  id="line2"
+                  name="line2"
+                  class="form-control"
+                  placeholder="Address line2"
+                 
+                />
+          </div>
+          
+          
+          <div class="form-group">
+            <label for="city">city</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              class="form-control"
+              placeholder="enter city"
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="zip">zip </label>
+            <input
+              type="number"
+              id="zip"
+              name="zip"
+              class="form-control"
+              placeholder="zip"
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="state"> state </label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              class="form-control"
+              placeholder="state"
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="country">country </label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              class="form-control"
+              placeholder="country"  
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone number">phone number </label>
+            <input
+              type="number"
+              id="phonenumber"
+              name="phonenumber"
+              class="form-control"
+              placeholder="phonenumber"
+              
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            download invoice
+          </button>
+        </form>
+        <!-- <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p> -->
+      </div>
+    </div>
+  </div>
+  

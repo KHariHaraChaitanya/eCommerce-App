@@ -1,0 +1,40 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3">
+          <i class="fas fa-user-plus"></i> Update Details
+        </h1>
+        <% include ./partials/messages %>
+        <form action="/usersRouter/userUpdate/<%- user._id%>" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter Name"
+              
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Email"
+              value="<%= typeof email != 'undefined' ? email : '' %>"
+            />
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">
+            Update
+          </button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+  

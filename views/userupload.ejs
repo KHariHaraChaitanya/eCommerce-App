@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+        <style>
+          img {
+            width: 100%;
+          }
+        </style>
+        <title>Template Uploads</title>
+
+
+      </head>
+      <!--  file upload start  -->
+
+
+      <body class ="bg-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 m-auto">
+              <h1 class="text-center display-4 my-4">Template Uploads</h1>
+
+         <form  action ="/userupload" method="POST" enctype="multipart/form-data">
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="TemplateName">TemplateName</label>
+            <input type="text" class="form-control" name="TemplateName" placeholder="TemplateName" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="TemplateImage">TemplateImage</label>
+            <input type="file" class="form-control" name="TemplateImage" placeholder="TemplateImage" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="TemplateDescription">TemplateDescription</label>
+          <input type="text" class="form-control" name="TemplateDescription" placeholder="About the template"required>
+        </div>
+        <div class="form-group">
+          <label for="Categories"> Categories</label>
+          <input type="text" class="form-control" name="Categories" placeholder="Retailers, Technology, Events"required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="brand">Brand</label>
+            <input type="text" class="form-control" name="Brand"required>
+          </div>
+          <!-- <div class="form-group col-md-4">
+
+            <a href="/upload" class="btn btn-success" data-toggle="modal" onclick="upload.ejs"><i class="material-icons">&#xE147;</i> <span>Add Template</span></a>
+           
+            <label for="ProductType">ProductType</label>
+            <select id="ProductType" class="form-control">
+              <option selected>choose..</option>
+              <option>food</option>
+              <option>infrastucture</option>
+              <option>other</option>
+            </select>
+          </div> -->
+          <!-- <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div> -->
+        </div>
+      
+        <button type="submit" class="btn btn-success">Add New Template</button>
+         </form>
+    <hr>
+             </div>
+          </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

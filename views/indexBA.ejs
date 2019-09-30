@@ -1,0 +1,786 @@
+
+
+<head>
+<meta name="author" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Ads</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+<!-- Style Sheets -->
+<link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="stylesheets/animate.css" type="text/css">
+<link rel="stylesheet" href="stylesheets/stylesheet.css" type="text/css">
+<link rel="stylesheet" href="stylesheets/responsive_style.css" type="text/css">
+<!-- Font Awesome Fonts-->
+<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+<!-- Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id="logo-header" data-spy="affix" data-offset-top="500">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-9">
+        <div id="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" ></a> </div>
+      </div>
+      <div class="col-sm-9 text-right">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#thrift-1" aria-expanded="false"> <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <div class="collapse navbar-collapse" id="thrift-1"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <div id="nav_menu_list">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="usersRouter/categories">Categories</a></li>
+                <li><a href="#">Use cases <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown">
+                    <li><a href="dashboard.html"><i class="fa fa-angle-double-right"></i> Product Campaigns</a></li>
+                    <li><a href="listing_grid.html"><i class="fa fa-angle-double-right"></i>Value added services </a></li>
+                    <li><a href="listing_list.html"><i class="fa fa-angle-double-right"></i> Festival wishes</a></li>
+                    <li><a href="listing_left_sidebar.html"><i class="fa fa-angle-double-right"></i>Short Ads </a></li>
+                    <li><a href="listing_right_sidebar.html"><i class="fa fa-angle-double-right"></i> Discounts & offers</a></li>
+                    <li><a href="listing_detail.html"><i class="fa fa-angle-double-right"></i> Brand enablers </a></li>
+                    <li><a href="listing_fullwidth.html"><i class="fa fa-angle-double-right"></i>Social media ads </a></li>
+                    <li><a href="page_error_404.html"><i class="fa fa-angle-double-right"></i>Web design ads </a></li>
+                  </ul>
+                </li>
+                <li><a href="usersRouter/templates">Templates</a></li>
+                <li><a href="usersRouter/designeradd">Be a Contributor</a></li>  
+                <li class="btn_item">
+				    <ul>
+              <%if(!login){%>
+						<li>
+						  <button class="btn_login" data-toggle="modal" data-target="#login">Login</button>
+						</li>
+						<li>
+						  <button class="btn_register" data-toggle="modal" data-target="#register">Register</button>
+            </li>
+            <%} else{%>
+              <li>
+                 <a href="/usersRouter/logout" ><button class="btn_logout" data-toggle="modal"  >Logout</button></a>
+                </li>
+                <%}%>
+
+            <!-- <li>
+						  <a class="btn_login" data-toggle="modal" data-target="#login">Login</a>
+						</li>
+						<li>
+						  <a class="btn_register" data-toggle="modal" data-target="#register">Register</a>
+						</li> -->
+				    </ul>	
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="location-map-block">
+  <div id="location-homemap-block"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-lg-12">
+        <div id="location-link-item">
+          <button id="map_list"><i class="fa fa-angle-double-up"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="slider-banner-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div id="home-slider-item"> <span class="helpyou_item">We <span>Help</span> You create</span>
+          <h1>AMAZING <span>ADS</span> FOR YOUR <span>BUSINESS</span></h1>
+          <p>Create, communicate & campaign, with professionally crafted videos...</p>
+        </div>
+        <div id="search-categorie-item-block">
+          <form id="categorie-search-form">
+            <h1>Search your Business Category</h1>
+			  
+			  
+            <div class="col-sm-9 col-md-10 nopadding">
+              <div id="search-input">
+                <div class="col-sm-3 nopadding">
+                  <select id="location-search-list" class="form-control">
+                    <option>All Categories</option>
+                    <option>Pubs & Restaurants</option>
+                    <option>Fashion</option>
+                    <option>E-commerce</option>
+					<option>Travel & Tourism</option>
+                    <option>Events & Meetups</option>
+					<option>Festival Greetings</option>
+					<option>Sales & Promotions</option>    
+                  </select>
+                </div>
+                <div class="col-sm-9 nopadding">
+                  <div class="form-group">
+                    <input id="location-search-data-store" class="form-control" name="search" placeholder="Enter Keyword" required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-2 text-right nopadding-right">
+              <div id="location-search-btn">
+                <button type="submit" id="search-btn"><i class="fa fa-search"></i>Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+       <!-- <div id="location_slider_item_block">
+          <button id="map_mark"><i class="fa fa-map-marker"></i></button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+<div id="search-categorie-item">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="row">
+          <div class="col-md-12 categories-heading bt_heading_3">
+            <h1>Popular <span>Categories</span></h1>
+            <div class="blind line_1"></div>
+            <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+            <div class="blind line_2"></div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-home"></i></div>
+                <h1><a href="#">Pubs & Restaurants</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-send"></i></div>
+                <h1><a href="#">Tourism & Travel</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-suitcase"></i></div>
+                <h1><a href="#">Events & Meetups</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-eye"></i></div>
+                <h1><a href="#">Sales & Promotions</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-heart"></i></div>
+                <h1><a href="#">Health & Fitness</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-female"></i></div>
+                <h1><a href="#">Entertainment</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-gears"></i></div>
+                <h1><a href="#">E-commerce</a></h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie_item">
+              <div class="cate_item_block hi-icon-effect-8">
+                <div class="cate_item_social hi-icon"><i class="fa fa-users"></i></div>
+                <h1><a href="#">Education</a></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="feature-item_listing_block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="col-md-12 feature-item-listing-heading bt_heading_3">
+          <h1>Create <span>Stunning visuals now</span></h1>
+          <div class="blind line_1"></div>
+          <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+          <div class="blind line_2"></div>
+        </div>
+		  <div id="video-frame">
+		  <video autoplay="" muted="" playsinline="" loop="" poster="../images/videos.jpg"> <source src="../images/videos.mp4" type="video/mp4"> </video>
+		  </div>
+          </div>
+    </div>
+  </div>
+</div>
+<div class="vfx-counter-block">
+  <div class="vfx-item-container-slope vfx-item-bottom-slope vfx-item-left-slope"></div>
+  <div class="container">
+    <div class="vfx-item-counter-up">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="vfx-item-countup">
+            <div class="vfx-item-black-top-arrow"><i class="fa fa-file"></i></div>
+            <div id="count-1" class="vfx-coutter-item count_number vfx-item-count-up">496</div>
+            <div class="counter_text">Downloads</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="vfx-item-countup">
+            <div class="vfx-item-black-top-arrow"><i class="fa fa-users"></i></div>
+            <div id="count-2" class="vfx-coutter-item count_number vfx-item-count-up">245</div>
+            <div class="counter_text">Users</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="vfx-item-countup">
+            <div class="vfx-item-black-top-arrow"><i class="fa fa-th"></i></div>
+            <div id="count-3" class="vfx-coutter-item count_number vfx-item-count-up">96</div>
+            <div class="counter_text">Categories</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="vfx-item-countup last-countup">
+            <div class="vfx-item-black-top-arrow"><i class="fa fa-th-list"></i></div>
+            <div id="count-4" class="vfx-coutter-item count_number vfx-item-count-up">274</div>
+            <div class="counter_text">Creatives</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="recent-product-item-listing">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="col-md-12 recent-item-listing-heading bt_heading_3">
+          <h1>Platforms <span>To Propogate</span></h1>
+          <div class="blind line_1"></div>
+          <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+          <div class="blind line_2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="recent-listing-box-container-item">
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-image">
+                  <h1>Web Designing</h1>
+                  <!-- <img src="../public/images/product/img1.png" alt="img1"> </div> -->
+                <div class="hover-overlay">
+                  <div class="hover-overlay-inner">
+                    <ul class="listing-links">
+                      <li><a href="#"><i class="fa fa-heart green-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-map-marker blue-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-share yallow-1"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-item">
+                  <div class="listing-boxes-text"> <a href="listing_detail.html">
+                    <h3>Animated Gifs in Web Design</h3>
+					                     
+                    <p>Adding movement to your website can help it make it more dynamic and interesting for users.</p>
+					   </a> <a href="#">Click here for more</a>
+
+                  </div>
+                  <div class="recent-feature-item-rating">
+                    <h2>Wed design creatives</h2>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="recent-listing-box-container-item">
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-image">
+                  <h1>Whatsapp</h1>
+                  <img src="images/product/img2.png" alt="img1"> </div>
+                <div class="hover-overlay">
+                  <div class="hover-overlay-inner">
+                    <ul class="listing-links">
+                      <li><a href="#"><i class="fa fa-heart green-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-map-marker blue-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-share yallow-1"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-item">
+                  <div class="listing-boxes-text"> <a href="listing_detail.html">
+                    <h3>Whatsapp for Adevrtising</h3>
+                    <p>Create eye-catching animated creatives like a pro and deliver a new experience to your customers</p>
+					   </a> <a href="#">Click here for more</a>
+
+                  </div>
+                  <div class="recent-feature-item-rating">
+                    <h2>Whatsapp for Advertising</h2>
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="recent-listing-box-container-item">
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-image">
+                  <h1>Social Media Campaign</h1>
+                  <img src="images/product/img3.png" alt="img1"> </div>
+                <div class="hover-overlay">
+                  <div class="hover-overlay-inner">
+                    <ul class="listing-links">
+                      <li><a href="#"><i class="fa fa-heart green-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-map-marker blue-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-share yallow-1"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-item">
+                  <div class="listing-boxes-text"> <a href="listing_detail.html">
+                    <h3>Social Media Campaign</h3>
+					   
+                    <p>GIFs on social media campaigns has increased dramatically as brands can deliver a strong emotional impact to their audience</p>
+					  </a> <a href="#">Click here for more</a>
+                  </div>
+                  <div class="recent-feature-item-rating">
+                    <h2> Social Media Campaign</h2>
+                     </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="recent-listing-box-container-item">
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-image">
+                  <h1>Digital Signage</h1>
+                  <img src="images/product/img4.png" alt="img1"> </div>
+                <div class="hover-overlay">
+                  <div class="hover-overlay-inner">
+                    <ul class="listing-links">
+                      <li><a href="#"><i class="fa fa-heart green-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-map-marker blue-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-share yallow-1"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-item">
+                  <div class="listing-boxes-text"> <a href="listing_detail.html">
+                    <h3>Digital signage</h3>
+                    <p>Digital signage lets you leverage the hypnotizing power of video to snag and hold customers’ attention. Creative artwork add more engaging viewer experience.</p>
+					  </a> <a href="#">Click here for more</a>
+                  </div>
+                  <div class="recent-feature-item-rating">
+                    <h2><i class="fa fa-map-marker"></i> Digital signage</h2>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="recent-listing-box-container-item">
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-image">
+                  <h1>Food</h1>
+                  <img src="images/product/img5.png" alt="img1"> </div>
+                <div class="hover-overlay">
+                  <div class="hover-overlay-inner">
+                    <ul class="listing-links">
+                      <li><a href="#"><i class="fa fa-heart green-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-map-marker blue-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-share yallow-1"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-item">
+                  <div class="listing-boxes-text"> <a href="listing_detail.html">
+                    <h3>Hello Directory Listing</h3>
+                    </a> <a href="#"><i class="fa fa-phone"></i> +91 087 654 3210</a>
+                    <p>Eiusmod tempor incidiunt labore velit dolore magna aliqu sed veniam quis nostrud lorem ipsum dolor sit amet consectetur...</p>
+                  </div>
+                  <div class="recent-feature-item-rating">
+                    <h2><i class="fa fa-map-marker"></i> Your City Here</h2>
+                    <span> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </span> </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+       <!--   <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="recent-listing-box-container-item">
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-image">
+                  <h1>Food</h1>
+                  <img src="images/product/img6.png" alt="img1"> </div>
+                <div class="hover-overlay">
+                  <div class="hover-overlay-inner">
+                    <ul class="listing-links">
+                      <li><a href="#"><i class="fa fa-heart green-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-map-marker blue-1"></i></a></li>
+                      <li><a href="#"><i class="fa fa-share yallow-1"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 nopadding">
+                <div class="recent-listing-box-item">
+                  <div class="listing-boxes-text"> <a href="listing_detail.html">
+                    <h3>Hello Directory Listing</h3>
+                    </a> <a href="#"><i class="fa fa-phone"></i> +91 087 654 3210</a>
+                    <p>Eiusmod tempor incidiunt labore velit dolore magna aliqu sed veniam quis nostrud lorem ipsum dolor sit amet consectetur...</p>
+                  </div>
+                  <div class="recent-feature-item-rating">
+                    <h2><i class="fa fa-map-marker"></i> Your City Here</h2>
+                    <span> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </span> </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="pricing-item-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="col-md-12 pricing-heading-title bt_heading_3">
+          <h1>Pricing <span>Plan</span></h1>
+          <div class="blind line_1"></div>
+          <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+          <div class="blind line_2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="price-table-feature-block">
+              <h1>Basic</h1>
+              <hr>
+              <p><span>Rs.3,500</span> Per Month</p>
+              <div class="vfx-pl-seperator"> <span><i class="fa fa-caret-down"></i></span> </div>
+              <div class="vfx-price-list-item">
+                <h2>Limited Number</h2>
+                <p>You can have 10 downloads from the pool of visually stunning creatives</p>
+              </div>
+              <div class="vfx-price-list-item">
+                <h2>Inline Editors</h2>
+                <p>Using our powerful inline editors you can customize as per your business requirement</p>
+              </div>
+              <div class="vfx-price-list-item">
+                <h2>Multiple Formats</h2>
+                <p>You can download an MP4/GIF format based on the hosting platform</p>
+              </div>
+              <div class="vfx-price-btn">
+                <button class="purchase-btn"><i class="fa fa-unlock-alt"></i> Purchase Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="price-table-feature-block active">
+              <h1>Premium</h1>
+              <hr>
+              <p><span>Rs.15000</span> Per Month</p>
+              <div class="vfx-pl-seperator"> <span><i class="fa fa-caret-down"></i></span> </div>
+              <div class="vfx-price-list-item">
+                <h2>Unlimited Number</h2>
+                <p>Unlock Unlimited downloads from any business category that you choose</p>
+              </div>
+              <div class="vfx-price-list-item">
+                <h2>Inline Editors</h2>
+                <p>Using our powerful inline editors you can customize as per your business requirement.</p>
+              </div>
+              <div class="vfx-price-list-item">
+                <h2>Multiple Formats</h2>
+                <p>You can download an MP4/GIF format based on the hosting platform.</p>
+              </div>
+              <div class="vfx-price-btn">
+                <button class="purchase-btn"><i class="fa fa-unlock-alt"></i> Purchase Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="price-table-feature-block">
+              <h1>Plus</h1>
+              <hr>
+              <p><span>Rs.35000</span> Per Month</p>
+              <div class="vfx-pl-seperator"> <span><i class="fa fa-caret-down"></i></span> </div>
+              <div class="vfx-price-list-item">
+                <h2>Unlimited Number & Digital Campaigns </h2>
+                <p>Unlock Unlimited downloads & integrate it to our digital platforms to campaign.</p>
+              </div>
+              <div class="vfx-price-list-item">
+                <h2>Inline Editors</h2>
+                <p>Using our powerful inline editors you can customize as per your business requirement.</p>
+              </div>
+              <div class="vfx-price-list-item">
+                <h2>Multiple Formats</h2>
+                <p>You can download High resolution format to broadcast on Digital Signages as well</p>
+              </div>
+              <div class="vfx-price-btn">
+                <button class="purchase-btn"><i class="fa fa-unlock-alt"></i> Purchase Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer footer-map">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>About Us</h2>
+          <hr>
+          <p class="about-lt">Businessads.co is a fraction of the cost of what organizations  pay to production houses & agencies for crafting an explainer, and the BusinessAds.co pre-defined solutions are thousand times better than that.</p>
+          <a href="about.html" class="btn-primary-link more-detail"><i class="fa fa-hand-o-right"></i> Read More</a>
+          <h2>Follow Us</h2>
+          <hr>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+        </div>
+     <!--   <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Recent Listing</h2>
+          <hr>
+          <ul class="widget-news-simple">
+            <li>
+              <div class="news-thum"><a href="#"><img src="images/new-thum-1.png" alt="new-thum-1"></a></div>
+              <div class="news-text-thum">
+                <h6><a href="listing_detail.html">Hello Directory Listing</a></h6>
+                <p>Phasellus ut condimentum diam, eget tempus lorem...</p>
+                <div>Price: $117</div>
+              </div>
+            </li>
+            <li>
+              <div class="news-thum"><a href="#"><img src="images/new-thum-1.png" alt="new-thum-1"></a></div>
+              <div class="news-text-thum">
+                <h6><a href="listing_detail.html">Hello Directory Listing</a></h6>
+                <p>Phasellus ut condimentum diam, eget tempus lorem...</p>
+                <div>Price: $117</div>
+              </div>
+            </li>
+          </ul>
+        </div>-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Useful links</h2>
+          <hr>
+          <ul class="use-slt-link">
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Privacy & Policy</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Payment Method</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Sitemap</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Support</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Have you any Query?</h2>
+          <hr>
+          <form class="form-alt">
+            <div class="form-group">
+              <input type="text" placeholder="Name :-" required class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Email :-" required class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message :-" required class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-quote">Send Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <p class="text-xs-center">Copyright © 2019 All Rights Reserved.</p>
+        </div>
+        <div><a href="#" class="scrollup">Scroll</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--================================ Login and Register Forms ===========================================--> 
+
+<!-- login form -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="listing-modal-1 modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"> Login</h4>
+      </div>
+      <div class="modal-body">
+        <div class="listing-login-form">
+          <form action="usersRouter/userlogin" method="POST">
+            <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+              <input class="form-field bgwhite" type="text" name="email" placeholder="email" />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+              <input class="form-field bgwhite" type="password" name="password" placeholder="Password"  />
+            </div>
+            <div class="listing-form-field clearfix margin-top-20 margin-bottom-20">
+              <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+              <label for="checkbox-1-1"></label>
+              <label class="checkbox-lable">Remember Me</label>
+              <a data-toggle="modal" href="#login1">Forgot Password?</a> </div>
+            <div class="listing-form-field">
+              <input class="submit" type="submit" value="login" />
+            </div>
+          </form>
+          <div class="bottom-links">
+            <p>Not a Member?<a href="#" class="btn_register" data-toggle="modal" data-target="#register">Create Account</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- registration form -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="listing-modal-1 modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel2">Registration</h4>
+      </div>
+      <div class="modal-body">
+        <div class="listing-register-form">
+          <form action="usersRouter/register" method="POST">
+            <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+              <input class="form-field bgwhite" type="text" name="name" placeholder="Name"  />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-envelope blue-1"></i>
+              <input class="form-field bgwhite" type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-envelope blue-1"></i>
+              <input class="form-field bgwhite" type="number" name="mobile" placeholder="Mobile no" />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+              <input class="form-field bgwhite" type="password" name="password" placeholder="Password"  />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+              <input class="form-field bgwhite" type="password" name="password2" placeholder="Confirm Password" />
+            </div>
+            <div class="listing-form-field clearfix margin-top-20 margin-bottom-20 login_form_text_center">
+              <input type="checkbox" id="checkbox-1-2" class="regular-checkbox" />
+              <label for="checkbox-1-2"></label>
+              <label class="checkbox-lable">i agree with</label> &nbsp; <a href="#">Terms & Conditions</a> </div>
+            <div class="listing-form-field">
+              <input class="submit" type="submit" value="create account" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!---
+for forgot password
+-->
+<div class="modal fade" id="login1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="listing-modal-1 modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"> Forgot password</h4>
+      </div>
+      <div class="modal-body">
+        <div class="listing-login-form">
+          <form action="/custom/account/forgotpassword">
+            <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+              <input class="form-field bgwhite" type="text" name="UserNameOREmail" id="UserNameOREmail" placeholder="Email" />
+            </div>        
+            
+            <div class="listing-form-field">
+              <input class="submit" type="submit" value="Send Email" />
+            </div>
+          </form>        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Scripts --> 
+<script src="javascripts/jquery-2.2.4.min.js"></script> 
+<script src="javascripts/bootstrap.min.js"></script> 
+<script src="javascripts/waypoints.js"></script> 
+<script src="javascripts/jquery_counterup.js"></script> 
+<script src="javascripts/jquery_custom.js"></script> 
+<script src="javascripts/homemap_custom.js"></script> 
+
+
+<script type="text/javascript">
+  $(window).on('load',function(){
+      $('#login').modal('show');
+  });
+
+
+
+//   var header = document.getElementById("ul_list");
+// var btns = header.getElementsByTagName("li");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
+</script>
+</body>

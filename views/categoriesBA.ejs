@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<meta name="author" content="">
+<meta name="description" content="">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Businessad's</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+<!-- Style Sheets -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/animate.css" type="text/css">
+<link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+<link rel="stylesheet" href="css/responsive_style.css" type="text/css">
+<!-- Font Awesome Fonts-->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<!-- Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="vfx_loader_block">
+  <div class="vfx-loader-item"> <img src="images/loading.gif" alt="" /> </div>
+</div>
+<div id="logo-header" data-spy="affix" data-offset-top="500">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-9">
+        <div id="logo"> <a href="index.html"><img src="images/logo.png" alt="logo"></a> </div>
+      </div>
+      <div class="col-sm-9 text-right">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#thrift-1" aria-expanded="false"> <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <div class="collapse navbar-collapse" id="thrift-1"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <div id="nav_menu_list">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="categories.html">Categories</a></li>
+                <li><a href="#">Listing <i class="fa fa-caret-down"></i></a>
+                  <ul class="dropdown">
+                    <li><a href="dashboard.html"><i class="fa fa-angle-double-right"></i> Dashboard</a></li>
+                    <li><a href="listing_grid.html"><i class="fa fa-angle-double-right"></i> Listing Grid</a></li>
+                    <li><a href="listing_list.html"><i class="fa fa-angle-double-right"></i> Listing List</a></li>
+                    <li><a href="listing_left_sidebar.html"><i class="fa fa-angle-double-right"></i> Listing Left Sidebar</a></li>
+                    <li><a href="listing_right_sidebar.html"><i class="fa fa-angle-double-right"></i> Listing Right Sidebar</a></li>
+                    <li><a href="listing_detail.html"><i class="fa fa-angle-double-right"></i> Listing Single Post</a></li>
+                    <li><a href="listing_fullwidth.html"><i class="fa fa-angle-double-right"></i> Listing Full Width</a></li>
+                    <li><a href="page_error_404.html"><i class="fa fa-angle-double-right"></i> Page not Found</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="btn_item">
+				    <ul>
+						<li>
+						  <button class="btn_login" data-toggle="modal" data-target="#login">Login</button>
+						</li>
+						<li>
+						  <button class="btn_register" data-toggle="modal" data-target="#register">Register</button>
+						</li>
+				    </ul>	
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="breadcrum-inner-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="breadcrum-inner-header">
+          <h1>Categories</h1>
+         
+         <i class="fa fa-circle"></i>  <a href="index.html">Home</a> <i class="fa fa-circle"></i> <a href="about.html"><span>Categories</span></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="vfx-search-item-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 vfx-search-categorie-title text-center bt_heading_3">
+        <h1>Search Your Business <span>Category</span></h1>
+        <div class="blind line_1"></div>
+        <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+        <div class="blind line_2"></div>
+      </div>
+      <div class="col-md-12">
+        <form id="search-form">
+          <div class="col-sm-9 col-md-10 nopadding">
+            <div id="vfx-search-box">
+              <div class="col-sm-3 nopadding">
+                <select id="search-location" class="form-control">
+                  <option>All Categories</option>
+                  <option>Business</option>
+                  <option>Free Lancing</option>
+                  <option>Web Development</option>
+                  <option>Web Designing</option>
+                </select>
+              </div>
+              <div class="col-sm-9 nopadding">
+                <div class="form-group">
+                  <input id="search-data" class="form-control" name="search" placeholder="Enter Keyword" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-2 text-right nopadding-right">
+            <div id="vfx-search-btn">
+              <button type="submit" id="search"><i class="fa fa-search"></i>Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="all-categorie-item-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="col-md-12 all-categorie-list-title bt_heading_3">
+          <h1>All <span>Categories</span></h1>
+          <div class="blind line_1"></div>
+          <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+          <div class="blind line_2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-suitcase"></i> Business</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-suitcase"></i> Jobs</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-user-md"></i> Health & Fitness</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-coffee"></i> Hotels & Travel</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-female"></i> Entertainment</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-home"></i> Real Estate</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-github"></i> Pets</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-cutlery"></i> Live Action Ads</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-eye"></i> Beauty & Spas</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-car"></i> Animated Ads</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-glass"></i> Wine</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-Social Media Ads-bag"></i> Cloth Shop</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-flag"></i> Sports & Adventure</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-flask"></i> Technology</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-youtube-play"></i> Arts & Entertainment</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="categorie-list-box">
+              <div class="search-categories-boxes">
+                <h2><i class="fa fa-mortar-board"></i> Education & Learning</h2>
+              </div>
+              <div class="categories-list">
+                <ul>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Animated Ads</a><span>10</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Live Action Ads</a><span>16</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Covers & Headers</a><span>26</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Social Media Ads</a><span>24</span></li>
+                  <li><a href="listing_list.html"><i class="fa fa-hand-o-right"></i> Instagram Stories</a><span>05</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="site-footer footer-map">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>About Us</h2>
+          <hr>
+          <p class="about-lt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer justo lectus, consectetur quis nisi vitae, Nunc eget ultrices ligula.</p>
+          <a href="about.html" class="btn-primary-link more-detail"><i class="fa fa-hand-o-right"></i> Read More</a>
+          <h2>Follow Us</h2>
+          <hr>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+          </ul>
+        </div>
+     
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Useful links</h2>
+          <hr>
+          <ul class="use-slt-link">
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Privacy & Policy</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Payment Method</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Sitemap</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Support</a></li>
+            <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Have you any Query?</h2>
+          <hr>
+          <form class="form-alt">
+            <div class="form-group">
+              <input type="text" placeholder="Name :-" required class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Email :-" required class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message :-" required class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-quote">Send Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <p class="text-xs-center">Copyright © 2017 All Rights Reserved.</p>
+        </div>
+        <div><a href="#" class="scrollup">Scroll</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--================================ Login and Register Forms ===========================================--> 
+
+<!-- login form -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="listing-modal-1 modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"> Login</h4>
+      </div>
+      <div class="modal-body">
+        <div class="listing-login-form">
+          <form action="#">
+            <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+              <input class="form-field bgwhite" type="text" name="user_name" placeholder="Username" />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+              <input class="form-field bgwhite" type="password" name="user_pass" placeholder="Password"  />
+            </div>
+            <div class="listing-form-field clearfix margin-top-20 margin-bottom-20">
+              <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+              <label for="checkbox-1-1"></label>
+              <label class="checkbox-lable">Remember Me</label>
+              <a href="#">Forgot Password?</a> </div>
+            <div class="listing-form-field">
+              <input class="submit" type="submit" value="login" />
+            </div>
+          </form>
+          <div class="bottom-links">
+            <p>Not a Member?<a href="#">Create Account</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- registration form -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="listing-modal-1 modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel2">Registration</h4>
+      </div>
+      <div class="modal-body">
+        <div class="listing-register-form">
+          <form action="#">
+            <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
+              <input class="form-field bgwhite" type="text" name="user_name" placeholder="Name"  />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-envelope blue-1"></i>
+              <input class="form-field bgwhite" type="email" name="user_email" placeholder="Email" />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+              <input class="form-field bgwhite" type="password" name="user_password" placeholder="Password"  />
+            </div>
+            <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
+              <input class="form-field bgwhite" type="password" name="user_confirm_password" placeholder="Confirm Password" />
+            </div>
+            <div class="listing-form-field clearfix margin-top-20 margin-bottom-20 login_form_text_center">
+              <input type="checkbox" id="checkbox-1-2" class="regular-checkbox" />
+              <label for="checkbox-1-2"></label>
+              <label class="checkbox-lable">i agree with</label> &nbsp; <a href="#">Terms & Conditions</a> </div>
+            <div class="listing-form-field">
+              <input class="submit" type="submit" value="create account" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts --> 
+<script src="js/jquery-2.2.4.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery_custom.js"></script> 
+</body>
+</html>
