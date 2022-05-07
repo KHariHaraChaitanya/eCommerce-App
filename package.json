@@ -27,7 +27,7 @@
     "multer": "^1.4.1",
     "nodeice": "^3.0.9",
     "nodemailer": "^6.7.2",
-    "passport": "^0.4.0",
+    "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "redis": "^2.8.0",
     "voucher-code-generator": "^1.1.1"
