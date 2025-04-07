@@ -33,7 +33,7 @@
     "passport-local": "^1.0.0",
     "redis": "^2.8.0",
     "voucher-code-generator": "^1.1.1",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.907.0"
   },
   "snyk": true
 }
