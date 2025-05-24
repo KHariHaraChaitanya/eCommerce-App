@@ -26,7 +26,7 @@
     "mongoose": "^5.13.9",
     "mongoose-text-search": "0.0.2",
     "morgan": "~1.9.1",
-    "multer": "^1.4.1",
+    "multer": "^2.0.0",
     "nodeice": "^3.0.9",
     "nodemailer": "^6.7.2",
     "passport": "^0.5.2",
